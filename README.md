@@ -8,7 +8,11 @@
 
 
 ### MadLib ###
-Application app.py imports stories.py which is the MadLib story engine. A sample story was provided and a flask application was created to serve up an page which asks for prompt words for the story. The prompt words are dynamic and based on the story. When submit is pressed, the prompted words are passed to a story page which presents the story with the prompted words inserted. Jinja page templates were created for the welcome (prompt words) page and story page. The templates were extended by adding a base template which is extended by the welcome and story pages. 
+Application app.py imports stories.py -- stories.py is the MadLib story engine. A sample story was provided in stories.py and a flask application was created to serve up a page which asks for various words for the story. The various prompt words are dynamic and change based on the story. 
+
+When submit is pressed, the prompted words are passed to a story page which presents the story with the prompted words inserted in the correct places in the story. 
+
+Jinja page templates were created for the welcome (prompt words) page and story page. The templates were extended by adding a base template which is extended by the welcome and story pages. 
 
 
 **ENHANCEMENTS**
@@ -18,7 +22,7 @@ The following Enhancements / Further Study endeavours were implemented:
 - **Safe HTML Filtering** - prompted words are in bold face. Adding **|safe**, {{my_story|safe}} let the html tags inserted in my_story by the Python code remain as html tags. The strong tags were further enhanced by using the color purple as well.
 
 
-**ISSUES**
+**ISSUES**: 
 Yes, I lost cycles with CSS because the styling was never appearing on the welcome page as a result of page caching in FireFox. I am not the best with CSS styling so the immediate thought was I must be doing something wrong combined with finding ways to get around the page caching that I was warned about. A new incognito session / private browsing session did the trick - just wish I thought of it sooner!  
 
 
