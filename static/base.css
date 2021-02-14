@@ -1,0 +1,26 @@
+input {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+p {
+    font-size: 1.5em;
+} 
+
+p strong{
+    color: #820486;
+}
+
+button {
+    font-size: 1.25em;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
